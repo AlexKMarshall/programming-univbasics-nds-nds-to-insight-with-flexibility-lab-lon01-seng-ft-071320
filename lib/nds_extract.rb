@@ -46,6 +46,8 @@ def gross_per_studio(collection)
   result = {}
   
   collection.count.times do |index|
+    studio = collection[index][:studio]
+    gross = collection[index][:worldwide_gross]
   end
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
